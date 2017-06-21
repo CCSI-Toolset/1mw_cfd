@@ -1,21 +1,16 @@
 # A simple makefile for creating the 1MW CFD Model distribution
-VERSION    := 2015.10.00
+VERSION    := $(shell git describe --tags --dirty )
 PRODUCT    := 1MW Adsorber and Regenerator CFD Models
 PROD_SNAME := 1MWCFD
-LICENSE    := CCSI_TE_LICENSE_$(PROD_SNAME).txt
+LICENSE    := LICENSE.md
 PKG_DIR    := CCSI_$(PROD_SNAME)_$(VERSION)
 PACKAGE    := $(PKG_DIR).tgz
-
-# Where Jenkins should checkout ^/projects/common/trunk/
-COMMON     := .ccsi_common
-LEGAL_DOCS := LEGAL \
-           CCSI_TE_LICENSE.txt
 
 PAYLOAD := docs/*.pdf \
      src/     \
      scripts/ \
      C2U      \
-     LEGAL    \
+     README.md \
      $(LICENSE)
 
 # Get just the top part (not dirname) of each entry so cp -r does the right thing
@@ -44,17 +39,7 @@ $(PACKAGE): $(PAYLOAD)
 	@cp -r $(PAYLOAD_TOPS) $(PKG_DIR)
 	@tar -cf - $(PKG_PAYLOAD) | gzip -n > $(PACKAGE)
 	@$(MD5BIN) $(PACKAGE)
-	@rm -rf $(PKG_DIR) $(LICENSE) $(LEGAL_DOCS)
-
-$(LICENSE): CCSI_TE_LICENSE.txt 
-	@sed "s/\[SOFTWARE NAME \& VERSION\]/$(PRODUCT) v.$(VERSION)/" < CCSI_TE_LICENSE.txt > $(LICENSE)
-
-$(LEGAL_DOCS):
-	@if [ -d $(COMMON) ]; then \
-	  cp $(COMMON)/$@ .; \
-	else \
-	  svn -q export ^/projects/common/trunk/$@; \
-	fi
+	@rm -rf $(PKG_DIR)
 
 clean:
-	@rm -rf $(PACKAGE) $(PKG_DIR) $(LICENSE) $(LEGAL_DOCS)
+	@rm -rf $(PACKAGE) $(PKG_DIR) *.tgz

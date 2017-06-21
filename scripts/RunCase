@@ -1,0 +1,13 @@
+#!/bin/bash
+#SBATCH -N 1
+#SBATCH --exclusive
+#SBATCH --ntasks-per-node=32
+#SBATCH --time=4-23:55:00
+#SBATCH -A CSMD
+#SBATCH --mail-type=END
+#SBATCH --mail-user=kevin.lai@pnnl.gov
+. /etc/profile.d/modules.sh
+module purge
+module load intel/11.1
+module load mvapich2/1.7
+srun -n 20 /people/kevinlai/mfix20140930/mfix.exe > /scratch/mfix.out

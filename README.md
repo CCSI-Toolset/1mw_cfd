@@ -1,5 +1,17 @@
-# 1mw_cfd
+# 1MW CFD
 1MW adsorber and regenerator CFD models
+
+## Getting Started
+
+See installaton and user guide documents in the [documentation](./docs) subdirectory.
+
+## Authors
+
+* Kevin Lai
+* Wenxiao Pan
+* Zhijie (Jay) Xu
+
+See also the list of [contributors](ccontributors) who participated in this project.
 
 ## Development Practices
 
@@ -10,18 +22,6 @@
 * Sensitive information (secret keys, usernames etc) and configuration data 
   (e.g database host port) should not be checked in to the repo.
 * A practice of rebasing with the main repo should be used rather that merge commmits.
-
-## Getting Started
-
-TBD
-
-## Authors
-
-* Kevin Lai
-* Wenxiao Pan
-* Zhijie (Jay) Xu
-
-See also the list of [contributors](https://github.com/CCSI-Toolset/1mw_cfd/contributors) who participated in this project.
 
 ## Versioning
 

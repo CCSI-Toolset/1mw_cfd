@@ -1,3 +1,5 @@
+[![Jenkins Build Status](https://keeling.lbl.gov:8080/buildStatus/icon?job=1mw_cfd)](https://keeling.lbl.gov:8080/job/1mw_cfd)
+
 # 1MW CFD
 1MW adsorber and regenerator CFD models
 

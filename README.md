@@ -3,7 +3,7 @@
 
 ## Getting Started
 
-See installaton and user guide documents in the [documentation](https://github.com/CCSI-Toolset/1mw_cfd/docs) subdirectory.
+See installaton and user guide documents in the [documentation](./docs) subdirectory.
 
 ## Authors
 

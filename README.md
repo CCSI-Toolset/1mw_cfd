@@ -5,7 +5,7 @@
 
 ## Getting Started
 
-See installaton and user guide documents in the [documentation](./docs) subdirectory.
+See installation and user guide documents in the [documentation](./docs) subdirectory.
 
 ## Authors
 

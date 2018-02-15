@@ -5,7 +5,7 @@
 
 ## Getting Started
 
-See installaton and user guide documents in the [documentation](./docs) subdirectory.
+See installation and user guide documents in the [documentation](./docs) subdirectory.
 
 ## Authors
 
@@ -13,7 +13,7 @@ See installaton and user guide documents in the [documentation](./docs) subdirec
 * Wenxiao Pan
 * Zhijie (Jay) Xu
 
-See also the list of [contributors](ccontributors) who participated in this project.
+See also the list of [contributors](contributors) who participated in this project.
 
 ## Development Practices
 

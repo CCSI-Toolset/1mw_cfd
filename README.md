@@ -13,7 +13,7 @@ See installation and user guide documents in the [documentation](./docs) subdire
 * Wenxiao Pan
 * Zhijie (Jay) Xu
 
-See also the list of [contributors](contributors) who participated in this project.
+See also the list of [contributors](../../contributors) who participated in this project.
 
 ## Development Practices
 
@@ -28,7 +28,7 @@ See also the list of [contributors](contributors) who participated in this proje
 ## Versioning
 
 We use [SemVer](http://semver.org/) for versioning. For the versions available, 
-see the [tags on this repository](https://github.com/1mw_cfd/tags). 
+see the [releases](../../releases) or [tags](../../tags) for this repository. 
 
 ## License & Copyright
 

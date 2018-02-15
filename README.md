@@ -13,7 +13,7 @@ See installation and user guide documents in the [documentation](./docs) subdire
 * Wenxiao Pan
 * Zhijie (Jay) Xu
 
-See also the list of [contributors](ccontributors) who participated in this project.
+See also the list of [contributors](contributors) who participated in this project.
 
 ## Development Practices
 
